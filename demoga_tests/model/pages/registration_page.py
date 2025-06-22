@@ -56,7 +56,7 @@ class RegistrationPage:
     def set_checkbox_hobbies(self, value):
         self._hobbies.element_by(have.text(value)).click()
 
-    def uploadPicture(self, value):
+    def upload_picture(self, value):
         self._picture.send_keys(value)
 
     def fill_current_address(self, value):

@@ -14,7 +14,7 @@ def test_forms_filling_and_submit(open_page_demoqa):
     registration_page.set_date_of_birth('1991', 'September', '15')
     registration_page.set_subjects('Commerce')
     registration_page.set_checkbox_hobbies('Music')
-    registration_page.uploadPicture(resource.path('img.jpg'))
+    registration_page.upload_picture(resource.path('img.jpg'))
     registration_page.fill_current_address('г. Москва, ул. Шарикоподшипниковская, 13c33')
     registration_page.set_state('Haryana')
     registration_page.set_city('Panipat')
