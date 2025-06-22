@@ -57,7 +57,7 @@ class RegistrationPage:
     def _set_checkbox_hobbies(self, value):
         self._hobbies.element_by(have.text(value)).click()
 
-    def _uploadPicture(self, value):
+    def _upload_picture(self, value):
         self._picture.set_value(value)
 
     def _fill_current_address(self, value):
@@ -84,7 +84,7 @@ class RegistrationPage:
         self._set_date_of_birth(user.date_of_birth)
         self._set_subjects(user.subjects)
         self._set_checkbox_hobbies(user.hobbies)
-        self._uploadPicture(resource.path(user.picture))
+        self._upload_picture(resource.path(user.picture))
         self._fill_current_address(user.current_address)
         self._set_state(user.state)
         self._set_city(user.city)
